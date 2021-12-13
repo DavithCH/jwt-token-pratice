@@ -1,0 +1,17 @@
+GET http://localhost:5000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGF2aXRoIiwiaWF0IjoxNjM3NjY1ODkxLCJleHAiOjE2Mzc2NjY3OTF9.FsGiJyv5X2p1dYn9KTlKNsZeBK9GzeJ0n_czO92cXGI
+### 
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "Davith"
+}
+
+### 
+POST http://localhost:3000/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRGF2aXRoIiwiaWF0IjoxNjM3NjY1NzMyfQ.WiMF5mzWz-N9m2TN01YyE515MUwtfT2fKqq31RPAGkU"
+}
